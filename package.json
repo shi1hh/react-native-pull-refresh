@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-refresh-infinite-list",
+        "scope": null,
+        "escapedName": "react-native-refresh-infinite-list",
+        "name": "react-native-refresh-infinite-list",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\project\\rnNews"
+    ]
+  ],
+  "_from": "react-native-refresh-infinite-list@latest",
+  "_id": "react-native-refresh-infinite-list@1.0.0",
+  "_inCache": true,
+  "_location": "/react-native-refresh-infinite-list",
+  "_nodeVersion": "6.9.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-refresh-infinite-list-1.0.0.tgz_1503476482189_0.9117581015452743"
+  },
+  "_npmUser": {
+    "name": "jarvisluong",
+    "email": "contact@luongdanghai.com"
+  },
+  "_npmVersion": "5.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-refresh-infinite-list",
+    "scope": null,
+    "escapedName": "react-native-refresh-infinite-list",
+    "name": "react-native-refresh-infinite-list",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-refresh-infinite-list/-/react-native-refresh-infinite-list-1.0.0.tgz",
+  "_shasum": "ca8fbd6b4be241cdc7e397872ee0363b537e7835",
+  "_shrinkwrap": null,
+  "_spec": "react-native-refresh-infinite-list",
+  "_where": "E:\\project\\rnNews",
+  "author": {
+    "name": "Luong Dang Hai"
+  },
+  "bugs": {
+    "url": "https://github.com/jarvisluong/react-native-refresh-infinite-list/issues"
+  },
+  "dependencies": {},
+  "description": "A List component that can do pull to refresh and infinite scroll",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-aJmAkEyiWZnoMaFU9SqtL4+XL41K6sRHsKyYYI+r4xfr3YGh6bPlUVI70+3rq7s5cdUKktcCRusdmnSRZ1pGUg==",
+    "shasum": "ca8fbd6b4be241cdc7e397872ee0363b537e7835",
+    "tarball": "https://registry.npmjs.org/react-native-refresh-infinite-list/-/react-native-refresh-infinite-list-1.0.0.tgz"
+  },
+  "gitHead": "276e586cb298bafdaacd4cb26542a5e012d07486",
+  "homepage": "https://github.com/jarvisluong/react-native-refresh-infinite-list#readme",
+  "keywords": [
+    "react-native",
+    "listview",
+    "refresh",
+    "list"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "jarvisluong",
+      "email": "contact@luongdanghai.com"
+    }
+  ],
+  "name": "react-native-refresh-infinite-list",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarvisluong/react-native-refresh-infinite-list.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
