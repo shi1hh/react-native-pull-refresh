@@ -13,9 +13,11 @@
       "E:\\project\\rnNews"
     ]
   ],
-  "_from": "react-native-refresh-infinite-list@latest",
+  "_from": "git+https://github.com/shi1hh/react-native-pull-refresh.git",
   "_id": "react-native-refresh-infinite-list@1.0.0",
+  "_inBundle": false,
   "_inCache": true,
+  "_integrity": "sha1-OZtB2bCJGR4Jxh4/EIk5SHYbvYE=",
   "_location": "/react-native-refresh-infinite-list",
   "_nodeVersion": "6.9.2",
   "_npmOperationalInternal": {
@@ -29,30 +31,32 @@
   "_npmVersion": "5.3.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-native-refresh-infinite-list",
-    "scope": null,
-    "escapedName": "react-native-refresh-infinite-list",
+    "type": "git",
+    "raw": "react-native-refresh-infinite-list@git+https://github.com/shi1hh/react-native-pull-refresh.git",
     "name": "react-native-refresh-infinite-list",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "escapedName": "react-native-refresh-infinite-list",
+    "rawSpec": "git+https://github.com/shi1hh/react-native-pull-refresh.git",
+    "saveSpec": "git+https://github.com/shi1hh/react-native-pull-refresh.git",
+    "fetchSpec": "https://github.com/shi1hh/react-native-pull-refresh.git",
+    "gitCommittish": "master"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-refresh-infinite-list/-/react-native-refresh-infinite-list-1.0.0.tgz",
+  "_resolved": "git+https://github.com/shi1hh/react-native-pull-refresh.git#bee96b8e8ba07781a7fa955cfa560b026baa8650",
   "_shasum": "ca8fbd6b4be241cdc7e397872ee0363b537e7835",
   "_shrinkwrap": null,
-  "_spec": "react-native-refresh-infinite-list",
-  "_where": "E:\\project\\rnNews",
+  "_spec": "react-native-refresh-infinite-list@git+https://github.com/shi1hh/react-native-pull-refresh.git",
+  "_where": "/Users/newone/Desktop/react-native-news",
   "author": {
     "name": "Luong Dang Hai"
   },
   "bugs": {
     "url": "https://github.com/jarvisluong/react-native-refresh-infinite-list/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {},
+  "deprecated": false,
   "description": "A List component that can do pull to refresh and infinite scroll",
   "devDependencies": {},
   "directories": {},
@@ -79,7 +83,6 @@
   ],
   "name": "react-native-refresh-infinite-list",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jarvisluong/react-native-refresh-infinite-list.git"

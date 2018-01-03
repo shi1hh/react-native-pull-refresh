@@ -19,10 +19,6 @@ import {
  *STATUS_REFRESH_IDLE->[STATUS_NONE, STATUS_WILL_REFRESH]
  *STATUS_WILL_REFRESH->[STATUS_REFRESH_IDLE, STATUS_REFRESHING]
  *STATUS_REFRESHING->[STATUS_NONE]
- *STATUS_INFINITE_IDLE->[STATUS_NONE, STATUS_WILL_INFINITE]
- *STATUS_WILL_INFINITE->[STATUS_INFINITE_IDLE, STATUS_INFINITING]
- *STATUS_INFINITING->[STATUS_NONE]
- *STATUS_INFINITE_LOADED_ALL->[STATUS_NONE]
  *
  */
 export const STATUS_NONE = 0;
@@ -30,10 +26,6 @@ export const STATUS_REFRESH_IDLE = 1;
 export const STATUS_WILL_REFRESH = 2;
 export const STATUS_REFRESHING = 3;
 export const STATUS_FINISH_REFRESH=8;
-const STATUS_INFINITE_IDLE = 4;
-const STATUS_WILL_INFINITE = 5;
-const STATUS_INFINITING = 6;
-const STATUS_INFINITE_LOADED_ALL = 7;
 
 const DEFAULT_PULL_DISTANCE = 60;
 const DEFAULT_HF_HEIGHT = 50;
@@ -105,7 +97,7 @@ export default class RIListView extends PureComponent {
     handlePanResponderMove=(e, gestureState)=> {
         const offset = gestureState.dy;
         let lastStatus = this.status;
-        console.log('handlePanResponderMove',lastStatus);
+        console.log('handlePanResponderMove',lastStatus,offset);
         if (this.scrollY === 0) {
             if (offset > 0 && this.status === STATUS_NONE) {
                 lastStatus = STATUS_REFRESH_IDLE;
@@ -258,7 +250,7 @@ RIListView.propTypes= {
     pullDistance: PropTypes.number,
     onRefresh: PropTypes.func,
     onHeaderRefresherStateChange:PropTypes.func,
-    headerRefresher:React.PropTypes.element,
+    headerRefresher:PropTypes.element,
     listViewStyle:View.propTypes.style,
     isPullRefresh:PropTypes.bool,
 }
