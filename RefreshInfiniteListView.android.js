@@ -115,7 +115,7 @@ export default class RIListView extends PureComponent {
         }
 
         if (this.status === STATUS_REFRESH_IDLE || this.status === STATUS_WILL_REFRESH) {
-            this.changeHeaderRefresherPosition(offset);
+            this.changeHeaderRefresherPosition(this.defaultXY.y+offset);
             if (offset < this.props.pullDistance) {
                 this.changeHeaderRefresherState(STATUS_REFRESH_IDLE);
 
