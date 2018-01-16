@@ -10,7 +10,8 @@ import {
     Dimensions,
     ActivityIndicator,
     PanResponder,
-    Animated
+    Animated,
+    ViewPropTypes
 } from 'react-native';
 
 /* list status change graph
@@ -76,6 +77,7 @@ export default class RIListView extends PureComponent {
     }
 
     changeHeaderRefresherState(status){
+
         this.status=status;
         this.props.onHeaderRefresherStateChange(status);
     }
@@ -88,7 +90,7 @@ export default class RIListView extends PureComponent {
 
             return (
                 <View  style={[{backgroundColor:'blue',height:this.props.headerRefresherHeight}]}>
-                  <Text>{'下拉刷新'}</Text>
+                    <Text>{'下拉刷新'}</Text>
                 </View>
             )
         }
@@ -99,6 +101,7 @@ export default class RIListView extends PureComponent {
         let lastStatus = this.status;
         console.log('handlePanResponderMove',lastStatus,offset);
         if (this.scrollY === 0) {
+
             if (offset > 0 && this.status === STATUS_NONE) {
                 lastStatus = STATUS_REFRESH_IDLE;
                 this.changeHeaderRefresherState(STATUS_REFRESH_IDLE);
@@ -110,11 +113,13 @@ export default class RIListView extends PureComponent {
             if (this.scrollFromTop && offset < 0) {
                 this.refs.scrollView.scrollTo({y: -offset, animated: true});
             } else if (!this.scrollFromTop && offset > 0) {
+
                 this.refs.scrollView.scrollTo({y: this.maxScrollY - offset, animated: true});
             }
         }
 
         if (this.status === STATUS_REFRESH_IDLE || this.status === STATUS_WILL_REFRESH) {
+
             this.changeHeaderRefresherPosition(this.defaultXY.y+offset);
             if (offset < this.props.pullDistance) {
                 this.changeHeaderRefresherState(STATUS_REFRESH_IDLE);
@@ -167,11 +172,6 @@ export default class RIListView extends PureComponent {
                     this.changeHeaderRefresherState(STATUS_NONE);
                     this.setScrollEnable(false);
                 });
-            }
-            else {
-                this.changeHeaderRefresherState(STATUS_NONE);
-                this.setScrollEnable(false);
-
             }
         }
         if(this.props.onRefresh){
@@ -251,7 +251,7 @@ RIListView.propTypes= {
     onRefresh: PropTypes.func,
     onHeaderRefresherStateChange:PropTypes.func,
     headerRefresher:PropTypes.element,
-    listViewStyle:View.propTypes.style,
+    listViewStyle:ViewPropTypes.style,
     isPullRefresh:PropTypes.bool,
 }
 
